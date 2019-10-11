@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="90.0dip">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <View android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.8" />
+            <ToggleButton android:id="@id/tb_menu1" android:background="@drawable/menu_filmeca_click" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="false" android:textOn="" android:textOff="" android:layout_weight="1.0" />
+            <View android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.8" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.8" />
+            <ToggleButton android:id="@id/tb_menu2" android:background="@drawable/menu_filmmetiers_click" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="false" android:textOn="" android:textOff="" android:layout_weight="1.0" />
+            <View android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.8" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.8" />
+            <ToggleButton android:id="@id/tb_menu3" android:background="@drawable/menu_lecon_click" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="false" android:textOn="" android:textOff="" android:layout_weight="1.0" />
+            <View android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.8" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.8" />
+            <ToggleButton android:id="@id/tb_menu4" android:background="@drawable/menu_videogag_click" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="false" android:textOn="" android:textOff="" android:layout_weight="1.0" />
+            <View android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.8" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.8" />
+            <ToggleButton android:id="@id/tb_menu5" android:background="@drawable/menu_cours_click" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="false" android:textOn="" android:textOff="" android:layout_weight="1.0" />
+            <View android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.8" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_logo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="#ff5e6160" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="30.0dip" android:text="@string/header_text" android:layout_alignParentRight="true" />
+        <GridView android:gravity="center" android:id="@id/gridView" android:focusable="true" android:visibility="gone" android:scrollbars="none" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="35.0dip" android:drawSelectorOnTop="true" android:verticalSpacing="10.0dip" android:stretchMode="columnWidth" android:numColumns="4" android:smoothScrollbar="true" />
+        <RelativeLayout android:id="@id/layout_homescreen" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="50.0sp" android:textColor="@color/red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_title" />
+                <TextView android:textSize="50.0sp" android:textStyle="bold" android:textColor="@color/red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/home_title2" />
+            </LinearLayout>
+            <TextView android:textSize="27.0sp" android:textColor="@color/darkgrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/home_subtitle" android:layout_below="@id/linearLayout" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout_lecon" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="50.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ToggleButton android:id="@id/tb_118" android:background="@drawable/toggle_selector_118" android:layout_width="145.0dip" android:layout_height="177.0dip" android:checked="true" android:textOn="" android:textOff="" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="105.0dip" android:layout_marginBottom="0.0dip">
+                    <ToggleButton android:id="@id/tb_sos" android:background="@drawable/toggle_selector_sos" android:layout_width="152.0dip" android:layout_height="252.0dip" android:checked="true" android:textOn="" android:textOff="" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="165.0dip" android:layout_marginTop="41.0dip">
+                <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:gravity="bottom" android:layout_width="310.0dip" android:layout_height="267.0dip" android:layout_centerHorizontal="true">
+                        <ImageView android:id="@id/tb_fire0" android:visibility="gone" android:layout_width="156.0dip" android:layout_height="125.0dip" android:layout_marginTop="92.0dip" android:src="@drawable/lesson_img" android:scaleType="centerInside" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
+                        <ToggleButton android:id="@id/tb_fire1" android:background="@drawable/toggle_selector_fire1" android:visibility="visible" android:layout_width="300.0dip" android:layout_height="55.0dip" android:layout_marginTop="0.0dip" android:layout_marginBottom="-5.0dip" android:checked="true" android:textOn="" android:textOff="" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                        <ToggleButton android:id="@id/tb_fire2" android:background="@drawable/toggle_selector_fire3" android:layout_width="300.0dip" android:layout_height="56.0dip" android:layout_marginLeft="-53.0dip" android:layout_marginTop="114.0dip" android:checked="true" android:textOn="" android:textOff="" android:rotation="120.0" />
+                        <ToggleButton android:id="@id/tb_fire3" android:background="@drawable/toggle_selector_fire2" android:visibility="visible" android:layout_width="300.0dip" android:layout_height="56.0dip" android:layout_marginTop="114.0dip" android:layout_marginRight="-52.0dip" android:checked="true" android:textOn="" android:textOff="" android:layout_alignParentRight="true" android:rotation="240.0" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="64.0dip">
+                    <ToggleButton android:id="@id/tb_group" android:background="@drawable/toggle_selector_group" android:layout_width="147.0dip" android:layout_height="147.0dip" android:checked="true" android:textOn="" android:textOff="" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="500.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="115.0dip" android:src="@drawable/ic_lessontext" android:scaleType="centerInside" android:adjustViewBounds="true" android:layout_alignParentLeft="true" />
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ToggleButton android:layout_gravity="center_horizontal" android:id="@id/tb_menulesson01" android:background="@drawable/toggle_selector_menulesson01" android:layout_width="126.0dip" android:layout_height="128.0dip" android:checked="true" android:textOn="" android:textOff="" />
+                        <ToggleButton android:layout_gravity="center_horizontal" android:id="@id/tb_menulesson02" android:background="@drawable/toggle_selector_menulesson02" android:layout_width="126.0dip" android:layout_height="128.0dip" android:layout_marginLeft="-6.0dip" android:checked="true" android:textOn="" android:textOff="" />
+                        <ToggleButton android:layout_gravity="center_horizontal" android:id="@id/tb_menulesson03" android:background="@drawable/toggle_selector_menulesson03" android:layout_width="126.0dip" android:layout_height="128.0dip" android:layout_marginLeft="-6.0dip" android:checked="true" android:textOn="" android:textOff="" />
+                        <ToggleButton android:layout_gravity="center_horizontal" android:id="@id/tb_menulesson04" android:background="@drawable/toggle_selector_menulesson04" android:layout_width="126.0dip" android:layout_height="128.0dip" android:layout_marginLeft="-6.0dip" android:checked="true" android:textOn="" android:textOff="" />
+                        <ToggleButton android:layout_gravity="center_horizontal" android:id="@id/tb_menulesson05" android:background="@drawable/toggle_selector_menulesson05" android:layout_width="126.0dip" android:layout_height="128.0dip" android:layout_marginLeft="-6.0dip" android:checked="true" android:textOn="" android:textOff="" />
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="97.0dip">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ToggleButton android:layout_gravity="center_horizontal" android:id="@id/tb_menulessona" android:background="@drawable/toggle_selector_menulessona" android:layout_width="146.0dip" android:layout_height="198.0dip" android:layout_marginLeft="-5.0dip" android:layout_marginRight="-5.0dip" android:checked="true" android:textOn="" android:textOff="" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ToggleButton android:layout_gravity="center_horizontal" android:id="@id/tb_menulessonb" android:background="@drawable/toggle_selector_menulessonb" android:layout_width="146.0dip" android:layout_height="198.0dip" android:layout_marginLeft="-8.0dip" android:layout_marginRight="-5.0dip" android:checked="true" android:textOn="" android:textOff="" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ToggleButton android:layout_gravity="center_horizontal" android:id="@id/tb_menulessonc" android:background="@drawable/toggle_selector_menulessonc" android:layout_width="146.0dip" android:layout_height="198.0dip" android:layout_marginLeft="-8.0dip" android:layout_marginRight="-5.0dip" android:checked="true" android:textOn="" android:textOff="" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ToggleButton android:layout_gravity="center_horizontal" android:id="@id/tb_menulessond" android:background="@drawable/toggle_selector_menulessond" android:layout_width="146.0dip" android:layout_height="198.0dip" android:layout_marginLeft="-8.0dip" android:layout_marginRight="-5.0dip" android:checked="true" android:textOn="" android:textOff="" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ToggleButton android:layout_gravity="center_horizontal" android:id="@id/tb_menulessone" android:background="@drawable/toggle_selector_menulessone" android:layout_width="146.0dip" android:layout_height="198.0dip" android:layout_marginLeft="-8.0dip" android:layout_marginRight="-5.0dip" android:checked="true" android:textOn="" android:textOff="" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
